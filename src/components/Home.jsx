@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div>
+        <main>
             <h2>自己紹介</h2>
             <p>渡邊 陽翔 -Watanabe Haruto-</p>
             <p>
@@ -54,6 +54,6 @@ export default function Home() {
                 https://unityroom.com/users/5qblj942rh1vw3ndk6fe
                 </a>
             </p>
-        </div>
+        </main>
     );
 }
