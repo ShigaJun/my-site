@@ -1,13 +1,23 @@
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Articles from "./Articles";
+
 export default function Nav() {
     return (
-        <nav className="menu">
-            <ul>
-                <li><span>Home</span></li>
-                <li><a href="#">Get started</a></li>
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">Gear</a></li>
-                <li><a href="#">Forum</a></li>
-            </ul>
-        </nav>
+        <BrowserRouter>
+            <div>
+                <nav className="menu">
+                    <ul>
+                        <li><Link to="/">ホーム</Link></li>
+                        <li><Link to="/articles">投稿記事</Link></li>
+                    </ul>
+                </nav>
+
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="articles" element={<Articles />} />
+                </Routes>
+            </div>
+        </BrowserRouter>
     );
 }
