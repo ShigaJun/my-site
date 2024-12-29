@@ -22,12 +22,12 @@ const parser = new Parser();
     try {
         const feed = await parser.parseURL(info.url);
         const articles = feed.items.map((item) => ({
-        title: item.title || '',
-        url: item.link || '',
-        date: item.isoDate || '',
-        thumbnail: item.enclosure?.url || '',
-        favicon: info.favicon,
-        site,
+            title: item.title || '',
+            url: item.link || '',
+            date: item.isoDate || '',
+            thumbnail: item.enclosure?.url || '',
+            favicon: info.favicon,
+            site,
         }));
         allArticles.push(...articles);
     } catch (error) {
