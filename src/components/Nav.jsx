@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Articles from "./Articles";
+import Articles from "./Gallery";
 
 export default function Nav() {
     return (
