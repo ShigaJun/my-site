@@ -14,7 +14,13 @@ const Fetch = () => {
 
   return (
      <>
+      <p>この下に表示されるものは，
+        <a href="https://jsonplaceholder.typicode.com/posts" target="_blank">
+          こちら
+        </a>
+      のAPIから取得したもので行っているテストです．</p>
       {data === undefined ? "Loading..." : <div><h3>{data[0].title}</h3><p>{data[0].body}</p></div>}
+      <p>テストはここまで</p>
      </>
   );
 };

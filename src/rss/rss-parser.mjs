@@ -35,5 +35,5 @@ const parser = new Parser();
     }
     }
 
-    writeFileSync('netlify/functions/data.json', JSON.stringify(allArticles, null, 2));
+    writeFileSync('src/rss/data.json', JSON.stringify(allArticles, null, 2));
 })();
