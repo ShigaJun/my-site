@@ -1,25 +1,25 @@
-import { writeFileSync } from 'fs';
 import Parser from 'rss-parser';
+
 const parser = new Parser();
 
-(async () => {
+export const handler = async (event, context) => {
     const rssFeed = {
         note: {
-            label: 'Note',
-            url: 'https://note.com/wata_haru_4869/rss',
-            favicon: 'https://assets.st-note.com/poc-image/manual/note-common-images/production/svg/production.ico',
+        label: 'Note',
+        url: 'https://note.com/wata_haru_4869/rss',
+        favicon: 'https://assets.st-note.com/poc-image/manual/note-common-images/production/svg/production.ico',
         },
         qiita: {
-            label: 'Qiita',
-            url: 'https://qiita.com/WatanabeHaruto/feed',
-            favicon: 'https://cdn.qiita.com/assets/favicons/public/production-c620d3e403342b1022967ba5e3db1aaa.ico',
+        label: 'Qiita',
+        url: 'https://qiita.com/wata_haru_4869/feed',
+        favicon: 'https://cdn.qiita.com/assets/favicons/public/production-c620d3e403342b1022967ba5e3db1aaa.ico',
         },
     };
 
     const allArticles = [];
 
     for (const [site, info] of Object.entries(rssFeed)) {
-    try {
+        try {
         const feed = await parser.parseURL(info.url);
         const articles = feed.items.map((item) => ({
             title: item.title || '',
@@ -30,10 +30,16 @@ const parser = new Parser();
             site,
         }));
         allArticles.push(...articles);
-    } catch (error) {
+        } catch (error) {
         console.error(`Error fetching feed for ${site}:`, error.message);
-    }
+        }
     }
 
-    writeFileSync('src/rss/data.json', JSON.stringify(allArticles, null, 2));
-})();
+    return {
+        statusCode: 200,
+        body: JSON.stringify(allArticles),
+        headers: {
+        'Content-Type': 'application/json',
+        },
+    };
+};
