@@ -13,7 +13,7 @@ export default function Home() {
                 次世代社会研究センター RINGS
                 </a>
             </p>
-            <img src="images/my-icon.jpg" alt="渡邊陽翔のプロフィール写真" />
+            <img src="../../images/my-icon.jpg" alt="渡邊陽翔のプロフィール写真" />
 
             <h2>経歴</h2>
             <ul>
