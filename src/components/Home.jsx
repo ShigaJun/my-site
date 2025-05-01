@@ -36,10 +36,22 @@ export default function Home() {
                 @wata_haru_4869
                 </a>
             </p>
+            <h3>GitHub</h3>
+            <p>
+                <a href="https://github.com/ShigaJun" target="_blank">
+                https://github.com/ShigaJun
+                </a>
+            </p>
             <h3>note</h3>
             <p>
                 <a href="https://note.com/wata_haru_4869/" target="_blank">
                 https://note.com/wata_haru_4869/
+                </a>
+            </p>
+            <h3>Qiita</h3>
+            <p>
+                <a href="https://qiita.com/wata_haru_4869" target="_blank">
+                https://qiita.com/wata_haru_4869
                 </a>
             </p>
             <h3>YouTube</h3>
