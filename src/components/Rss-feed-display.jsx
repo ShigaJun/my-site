@@ -41,7 +41,7 @@ export default function RssFeedDisplay() {
           ))}
         </ul>
       ) : (
-        <p>No articles available</p>
+        <p>Loading...</p>
       )}
     </div>
   );
