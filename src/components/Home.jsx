@@ -4,7 +4,7 @@ export default function Home() {
             <h2>自己紹介</h2>
             <p>渡邊 陽翔 -Watanabe Haruto-</p>
 
-            <img src="images/my-icon.jpg" alt="渡邊陽翔のプロフィール写真" />
+            <img src="images/my-icon_2025-01-12.jpeg" alt="渡邊陽翔のプロフィール写真" />
 
             <h3>所属</h3>
             <ul>
