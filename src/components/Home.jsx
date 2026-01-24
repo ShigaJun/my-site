@@ -39,6 +39,7 @@ export default function Home() {
             <h3>IT系</h3>
             <ul>
                 <li>基本情報技術者試験（2025年6月）</li>
+                <li>応用情報技術者試験（2025年12月）</li>
             </ul>
             <h3>外国語</h3>
             <ul>
