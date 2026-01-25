@@ -1,5 +1,4 @@
 import RssFeedDisplay from "./Rss-feed-display";
-import Fetch from "./Fetch";
 
 export default function Articles() {
     return (
