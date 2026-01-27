@@ -12,7 +12,14 @@ export default function Footer() {
           <FooterSocialLinks />
 
           <p className="text-sm text-muted-foreground">
-            &copy; 2026 Watanabe Haruto
+            &copy; 2026 Watanabe Haruto · 
+            <a 
+              href="https://github.com/ShigaJun/my-site"
+              target="_blank"
+              className="hover:underline ml-1"
+            >
+              Source on GitHub
+              </a>
           </p>
         </div>
 
