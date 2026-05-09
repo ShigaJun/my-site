@@ -7,11 +7,13 @@ import Links from "./Links";
 
 export default function Main() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="profile" element={<Profile />} />
-      <Route path="articles" element={<Articles />} />
-      <Route path="links" element={<Links />} />
-    </Routes>
+    <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="articles" element={<Articles />} />
+        <Route path="links" element={<Links />} />
+      </Routes>
+    </main>
   );
 }
