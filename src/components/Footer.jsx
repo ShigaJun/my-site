@@ -27,6 +27,7 @@ export default function Footer() {
           <Button
             onClick={returnTop}
             className="text-sm text-muted-foreground hover:scale-105 hover:text-foreground transition"
+            aria-label="ページトップへ移動"
           >
             ^
           </Button>
