@@ -1,11 +1,14 @@
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-      <nav className="menu">
-        <ul>
+      <nav>
+        <ul className="flex gap-6">
           <li>
             <Link to="/">ホーム</Link>
+          </li>
+          <li>
+            <Link to="/profile">プロフィール</Link>
           </li>
           <li>
             <Link to="/articles">投稿記事</Link>
